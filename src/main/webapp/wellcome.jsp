@@ -12,6 +12,12 @@
 <body>
 
     <h1>Resumen de factura: </h1>
+    <s:text name= "concepto" /> <s:property value="invoiceBean.subject"/><br>
+    <s:text name="desde" /> <s:property value="invoiceBean.dateFrom" /><br>
+    <s:text name="hasta" /> <s:property value="invoiceBean.dateTo" /><br>
+    <s:text name="importeBruto" /> <s:property value="invoiceBean.importeBruto" /><s:text name=" €" /><br>
+    <br>
+    Importe Total (IVA incluido): ${importeTotal} €
 
 </body>
 </html>
